@@ -70,10 +70,12 @@ export const cardSlice = createSlice({
       });
     },
     resetCards: state => {
-      state.playerCards = initialState.playerCards;
-      state.discardPile = initialState.discardPile;
-      state.deck = initialState.deck;
-      state.shownDrawCard = initialState.shownDrawCard;
+      const compleateDeck = createDeck();
+      let [initialPlayerCards, discardCard, deck] = deal(compleateDeck);
+      state.playerCards = initialPlayerCards;
+      state.discardPile = [discardCard];
+      state.deck = deck;
+      state.shownDrawCard = null;
     },
   },
 });
