@@ -1,7 +1,7 @@
 const cardImages = {
   back: require('../assets/cards/back.png'),
-  card0: require('../assets/cards/card-2.png'),
-  card1: require('../assets/cards/card-1.png'),
+  card0: require('../assets/cards/cardn2.png'),
+  card1: require('../assets/cards/cardn1.png'),
   card2: require('../assets/cards/card0.png'),
   card3: require('../assets/cards/card1.png'),
   card4: require('../assets/cards/card2.png'),
