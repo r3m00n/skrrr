@@ -1,12 +1,14 @@
 {
-  "name": "skr",
+  "name": "skrrr",
   "version": "1.0.0",
   "main": "expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "start": "expo start -c",
+    "android": "expo start -c --android",
+    "ios": "expo start -c --ios",
+    "web": "expo start -c --web",
+    "build": "eas build --platform android",
+    "apks": "bundletool build-apks --bundle=my_app.aab --output=skrrr.apks --mode=universal"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
